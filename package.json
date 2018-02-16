@@ -1,0 +1,27 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Helps you connect and make new a friend",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpoeltler/friend-finder.git"
+  },
+  "keywords": [
+    "friend"
+  ],
+  "author": "Kate Poeltler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpoeltler/friend-finder/issues"
+  },
+  "homepage": "https://github.com/kpoeltler/friend-finder#readme"
+}
