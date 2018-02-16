@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var server = http.createServer(handleRequest)
 
-// Sets up the Express app
+// Sets up the express app
 var app = express();
 var PORT = 3000;
 
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 //sets up the server port
 function handleRequest(request, response) {
     // Send the below string to the client when the user visits the PORT URL
-    response.end('It Works!! Path Hit: ' + request.url)
+    // response.end('It Works!! Path Hit: ' + request.url)
   }
   
   
