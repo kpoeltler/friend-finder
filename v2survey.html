@@ -1,0 +1,35 @@
+<p>
+    <a class="btn btn-success btn-lg" id="submit" href="#" role="button"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Submit</a>
+</p>
+<hr>
+<!-- Modal -->
+<div class="modal fade" id="modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+    <p>
+        <a href="/api/friends">API Friends List</a> |
+        <a href="https://github.com/kpoeltler/friend-finder">GitHub Repo</a>
+    </p>
+</div>
+</footer>
+</div>
+<script src="../server.js"></script>
+<script>
+// $('#modal').on('shown.bs.modal', function() { // $('#modal').focus(); // });
+$('#submit').on('click', function() {
