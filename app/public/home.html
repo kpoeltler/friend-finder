@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script><style></style>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
   <!-- <body data-gr-c-s-loaded="true" style=""> -->
@@ -17,29 +17,28 @@
       <div class="container">
     
         <div class="jumbotron">
-          <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+          <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Beta Test</h1>
           <hr>
-          <h2>Answer a few basic questions. </h2>
-          <h2>Then find the friend with the greatest compatibility!</h2>
-          <br>
+          
+          <div class="container">
+              
+              <h3>About You</h3>
+              <h4>Name (Required):</h4>
+              <input type="text" class="form-control" id="name" placeholder="Text input">
+              <h4>Link to Photo Image (Required):</h4>
+              <input type="text" class="form-control" id="photo" placeholder="Text input">
+              <hr>
     
           <div>
-            <a href="./survey.html"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+              <h2>
+                  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Take the Friend Finder Survey</h2>
+              <hr>
+              <h3>You're about to be matched to a friend with the greatest compatibility. </h3>
+              
+              <br>
+            <a href="./survey.html"><button type="button" id="survey" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
           </div>
     
-        <!-- </div>
-    
-        <footer class="footer">
-          <div class="container">
-            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/kpoeltler/friend-finder">GitHub Repo</a></p>
-          </div> -->
-        <!-- </footer> -->
-    
-      <!-- </div> -->
-    
-    
-    
-    
-    <div id="ulGrid" class="ul-grid hidden"></div>
+     
   </body>
   </html>

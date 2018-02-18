@@ -1,32 +1,68 @@
-//Dependencies
-var http = require('http');
+
+// Dependencies
+// =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-var path = require("path");
-var server = http.createServer(handleRequest)
-
-// Sets up the express app
+// var path = require("path");
+// Sets up the Express App
+// =============================================================
 var app = express();
-// var PORT = 3000;
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing
+
+// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
 app.use(bodyParser.json());
 
-//sets up the server port
-function handleRequest(request, response) {
-    // Send the below string to the client when the user visits the PORT URL
-    // response.end('It Works!! Path Hit: ' + request.url)
-  }
-  
-  
-//enables functionality to the server
+// Static directory
+app.use(express.static("app/public"));
+
+// Routes
+// =============================================================
+// require("./app/routes/api-routes.js")(app);
+
+// require("./app/routes/html-routes.js")(app);
+
+// Starts the server to begin listening
+// =============================================================
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});
 
 
 
-   app.listen(port, function() {
-server.listen(PORT, function() {
-   console.log('Server listening on: http://localhost:' + PORT)
-    })});
-    // (using `process.env.PORT`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
