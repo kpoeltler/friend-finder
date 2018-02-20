@@ -31,6 +31,7 @@ Survey
     .StylesManager
     .applyTheme("default");
 
+    
 var json = {
     questions: [
         {
@@ -62,21 +63,21 @@ var json = {
                     text: "I would agree that a graceful way of concluding a friendly dinner, is to split the bill 50/50."
                 }, {
                     value: "q2",
-                    text: "Most Saturdays, I fell like a weekend warrior. I want a friend who's ready for an outdoor adventure is important to you."
+                    text: "Most Saturdays, I feel like a weekend warrior. I want a friend who's looking to have fun doing any outdoor activity."
                 }, {
                     value: "q3",
-                    text: "Perhaps, most weekends you prefer having a few buddies over, to lounge in front of a big flat screen and get stuffed on unhealthy/healthy snacks and liquids."
+                    text: "Most of my weekends I prefer lounging in front of a big flat screen tv and getting stuffed on unhealthy or healthy snacks and liquids."
                 }, {
                     value: "q4",
-                    text: "On average your weekend plans mostly include, collaborating on a potential multi-million dollar ideas/business, plan/hobbie. Having an ambitious, focused friend may provide the companionship that helps take you straight to the top of life's pyramid."
+                    text: "Most of my weekends are spent collaborating on potential multi-million dollar ideas/business plans.  I want an ambitious business partner."
                 },
             {
                     value: "q5",
-                    text: "Your wardrobe screams to the rest of the world 'Yeah! I treat myself!' Perhaps, what will make you smile is having a friend who admires and has the funds to splurge on the finer things in life."
+                    text: "My wardrobe screams to the rest of the world 'Yeah! I treat myself!' I what a friend who has the funds to splurge on the finer things in life."
                 },
                 {
                     value: "q6",
-                    text: "On average your weekend plans mostly include, collaborating on a potential multi-million dollar ideas/business, plan/hobbie. Having an ambitious, focused friend may provide the companionship that helps take you straight to the top of life's pyramid."
+                    text: "I'm looking for a friend who wants to travel the globe."
                 },
                 {
                     value: "q7",
@@ -84,11 +85,11 @@ var json = {
                 },
                 {
                     value: "q8",
-                    text: "I can't wait to spend quality time building a long lasting friendship."
+                    text: "I want a same sex friend who could end up being my soul-mate."
                 },
                 {
                     value: "q9",
-                    text: "I prefer a friend of the opposite sex. You never know where it will lead...perhaps, a new romance."
+                    text: "I prefer a friend of the opposite sex. You never know where it will lead, perhaps a new romance."
                 },
                 
                 {
@@ -119,13 +120,13 @@ $("#surveyElement").Survey({model: survey});
 // Routes
 // =============================================================
 
-
-// app.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, ".html"));
-//   });
+//do I need to have this generic app.get?
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, ".html"));
+  });
   
-//   app.get("/add", function(req, res) {
-//     res.sendFile(path.join(__dirname, "add.html"));
+  app.get("/data", function(req, res) {
+    res.sendFile(path.join(__dirname, "survery.js."));
 //   });
   
   
@@ -133,9 +134,9 @@ $("#surveyElement").Survey({model: survey});
 //     res.json(characters);
 //   });
   
-//   let newUser = {
-//     scores: []
-// };
+  let newUser = {
+    results: []
+};
 
 
 // $("#survey").on("click", function () {
