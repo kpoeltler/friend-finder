@@ -1,171 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script><style></style>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+
+<head>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <script src='https://code.jquery.com/jquery.js'></script>
+    <style></style>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js'></script>
     <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+
+
+</head>
+
+<body>
+    <div class='container'>
+
+        <!--  Questions -->
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>I would agree that a graceful way of concluding a friendly dinner, is to split the bill 50/50.</h4>
+        <select data-placeholder='' class='chosen-select' id='q1'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Most Saturdays, I feel like a weekend warrior. I want a friend who's looking to have fun doing any outdoor activity.</h4>
+        <select data-placeholder='' class='chosen-select' id='q2'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>Most of my weekends I prefer lounging in front of a big flat screen tv and getting stuffed on unhealthy or healthy
+            snacks and liquids.</h4>
+        <select data-placeholder='' class='chosen-select' id='q3'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>Most of my weekends are spent collaborating on potential multi-million dollar ideas/business plans. I want an ambitious
+            business partner.</h4>
+        <select data-placeholder='' class='chosen-select' id='q4'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>My wardrobe screams to the rest of the world 'Yeah! I treat myself!' I what a friend who has the funds to splurge
+            on the finer things in life.</h4>
+        <select data-placeholder='' class='chosen-select' id='q5'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>I'm looking for a friend who wants to travel the globe.</h4>
+        <select data-placeholder='' class='chosen-select' id='q6'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>My family and work don't leave a lot of free time. That being said, I'm looking for a friend who wants to meet up
+            once a month.</h4>
+        <select data-placeholder='' class='chosen-select' id='q7'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>I want a same sex friend who could end up being my soul-mate.</h4>
+        <select data-placeholder='' class='chosen-select' id='q8'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>I prefer a friend of the opposite sex. You never know where it will lead, perhaps a new romance.</h4>
+        <select data-placeholder='' class='chosen-select' id='q9'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>I'm not looking for love, I just want to meet a cool democrat.</h4>
+        <select data-placeholder='' class='chosen-select' id='q10'>
+            <option value=''></option>
+            <option value='1'>1 (Strongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+
+        <!-- where should this submit button link too? My guess it should link to the friend.js  -->
+        <div>
+
+            <a id='submit' class='btn btn-lg btn-primary' href='#' role='button'>
+                <h4>
+                    <i class='fas fa-user'></i> Submit
+                </h4>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
     
-        
-    </head>
-    <body>
-        <div class="container">
-        
-                <!--  Questions -->
-                <h3>
-                        <strong>Question 1</strong>
-                    </h3>
-                <h4>I would agree that a graceful way of concluding a friendly dinner, is to split the bill 50/50.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 2</strong>
-                    </h3>
-                <h4>Most Saturdays, I feel like a weekend warrior. I want a friend who's looking to have fun doing any outdoor activity.</h4>
-                <select data-placeholder="" class="chosen-select" id="q2">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-
-                <h3>
-                        <strong>Question 3</strong>
-                    </h3>
-                <h4>Most of my weekends I prefer lounging in front of a big flat screen tv and getting stuffed on unhealthy or healthy snacks and liquids.</h4>
-                <select data-placeholder="" class="chosen-select" id="q3">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 4</strong>
-                    </h3>
-                <h4>Most of my weekends are spent collaborating on potential multi-million dollar ideas/business plans.  I want an ambitious business partner.</h4>
-                <select data-placeholder="" class="chosen-select" id="q4">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 5</strong>
-                    </h3>
-                <h4>My wardrobe screams to the rest of the world 'Yeah! I treat myself!' I what a friend who has the funds to splurge on the finer things in life.</h4>
-                <select data-placeholder="" class="chosen-select" id="q5">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 6</strong>
-                    </h3>
-                <h4>I'm looking for a friend who wants to travel the globe.</h4>
-                <select data-placeholder="" class="chosen-select" id="q6">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 7</strong>
-                    </h3>
-                    <h4>My family and work don't leave a lot of free time. That being said, I'm looking for a friend who wants to meet up once a month.</h4>
-                <select data-placeholder="" class="chosen-select" id="q7">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 8</strong>
-                    </h3>
-                <h4>I want a same sex friend who could end up being my soul-mate.</h4>
-                <select data-placeholder="" class="chosen-select" id="q8">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 9</strong>
-                    </h3>
-                <h4>I prefer a friend of the opposite sex. You never know where it will lead, perhaps a new romance.</h4>
-                <select data-placeholder="" class="chosen-select" id="q9">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-                <h3>
-                        <strong>Question 10</strong>
-                    </h3>
-                <h4>I'm not looking for love, I just want to meet a cool democrat.</h4>
-                <select data-placeholder="" class="chosen-select" id="q10">
-                    <option value=""></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-
-
-
-                <!--
-                    This stuff is listed on the home.html
-                     <h1><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Friend Finder Survey</h1>
-                <hr>
-                <h3>About You</h3>
-                <h4>Name (Required):</h4>
-                <input type="text" class="form-control" id="name" placeholder="First Name">
-                <h4>Link to Photo Image (Required):</h4>
-                <input type="text" class="form-control" id="photo" placeholder="image URL">
-                <hr> -->
-
-
-
-        <script type="text/javascript" src="./survey.js"></script>
-
-
-
-
-
-    </body>
+</body>
 </html>
