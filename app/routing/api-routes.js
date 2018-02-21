@@ -4,9 +4,9 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var survey = require("../data/");
-var  = require("../data/waitinglistData");
+var survey = require("../data/friends.js");
 
+ 
 
 // ===============================================================================
 // ROUTING

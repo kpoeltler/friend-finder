@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on friends.js.
 // ===============================================================================
 var path = require("path");
-var survey = require("../data/survey");
+
 
 
 // ===============================================================================
