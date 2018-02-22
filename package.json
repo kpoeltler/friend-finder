@@ -1,0 +1,26 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "get matched to a new friend!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpoeltler/friend-finder.git"
+  },
+  "keywords": [],
+  "author": "Katie Poeltler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kpoeltler/friend-finder/issues"
+  },
+  "homepage": "https://github.com/kpoeltler/friend-finder/#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "surveyjs-editor": "^1.0.9"
+  }
+}
