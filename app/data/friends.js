@@ -1,4 +1,4 @@
-var friends = [
+let friends = [
     {
       name: "Matthew Meyer",
       photo: "https://teamcolorcodes.com/milwaukee-brewers-color-codes/",
@@ -31,10 +31,12 @@ var friends = [
     },
     {
       name: "Lindsey",
-      photo: "http://www.wbur.org/artery/2017/03/13/silent-sky-harvard-astronomy-women-computers",
+      photo: "http://www.wbur.org/artery/2017/03/13/silent-sky-harletd-astronomy-women-computers",
       scores: [1, 2, 3, 5, 1, 5, 5, 4, 1, 3]
     },
   ];
   
-  module.exports = friends;
-  
+  module.export = friends;
+  //======================================
+  //import { friends.score } from 'friends';
+//friends();

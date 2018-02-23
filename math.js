@@ -38,15 +38,24 @@ module.exports = function(app) {
         let difference = Math.abs(minuend - subtrahend);
         // add all scores to get final total difference score
         differenceScore = differenceScore + addToScore;
-      
-    
+      }
+     
       let compatiblity = differenceScore;
       
     // store new data
     likertScores.push(userFriend);
     // send back matchingFriend object in response
     res.json(matchingFriend);
-    }
-  }
-})
-}
+  });
+};
+
+function Rectangle(width, height) {
+  this.width = width;
+  this.height = height;
+ }
+ Rectangle.prototype.area = function() {
+ return this.width*this.height;
+ }
+ var r = new Rectangle(26, 14); // {width: 26, height: 14}
+ var v = r.area(); // v == 26*14
+ Object.keys(r) == [ 'width', 'height' ] // own properties
