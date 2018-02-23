@@ -20,10 +20,9 @@ module.exports = function(app) {
   app.post("/api/friends", function(req, res) {
     let userFriend = req.body;
     let differenceScore;
-    let compDiff = 0;
-    let compFriend;
-    let compFriendPhoto;
-
+    let compatibility = 0;
+    
+    
     // iterates thru the friends data
     for (let i = 0; i < likertScores.length; i++) {
       // set total score to 0
@@ -40,7 +39,7 @@ module.exports = function(app) {
         differenceScore = differenceScore + addToScore;
       
     
-      let compatiblity = differenceScore;
+      let compatibility = differenceScore;
       
     // store new data
     likertScores.push(userFriend);
