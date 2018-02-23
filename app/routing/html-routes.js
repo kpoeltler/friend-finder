@@ -1,5 +1,7 @@
-var bodyParser = require("body-parser");
-var path = require("path");
+
+
+let bodyParser = require("body-parser");
+let path = require("path");
 
 module.exports = function(app) {
   // express data parsing
