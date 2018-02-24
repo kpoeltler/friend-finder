@@ -59,3 +59,9 @@ function Rectangle(width, height) {
  var r = new Rectangle(26, 14); // {width: 26, height: 14}
  var v = r.area(); // v == 26*14
  Object.keys(r) == [ 'width', 'height' ] // own properties
+ // (document).on("click", ".submit", function () { // var name = $('#friend-name').val().trim(); // var photoLink = $('#friend-photo').val().trim();
+// var ansLength = $('#q1').val().length + $('#q2').val().length + $('#q3').val().length + $('#q4').val().length + $('#q5').val().length
++ $('#q6').val().length + $('#q7').val().length + $('#q8').val().length + $('#q9').val().length + $('#q10').val().length;
+// var name = $("#reserve-name").val(); // var phone = $("#reserve-phone").val(); // var email = $("#reserve-email").val();
+// var id = $("#reserve-unique-id").val(); // var newUser = { // name: name, // phone: phone, // email: email, // id: id,
+// })
