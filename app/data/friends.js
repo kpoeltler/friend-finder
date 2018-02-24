@@ -37,6 +37,4 @@ let friends = [
   ];
   
   module.export = friends;
-  //======================================
-  //import { friends.score } from 'friends';
-//friends();
+  
