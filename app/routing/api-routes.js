@@ -25,7 +25,7 @@ module.exports = function(app) {
         
         var userFriend = req.body;
         var totalScore;
-        var compDiff = 40;
+        var compDiff = 0;
         var compFriend;
         var compFriendPhoto;
         

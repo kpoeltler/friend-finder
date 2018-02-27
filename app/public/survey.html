@@ -17,7 +17,7 @@
 <body>
     <div class='container'>
         <h4>
-            <strong>1 = stongly disagree & 5 = strongly agree</strong>
+            <strong>1 = stongly disagree and 5 = strongly agree</strong>
             <!--  Questions -->
             <h3>
                 <strong>Question 1</strong>
@@ -193,9 +193,9 @@
                     </div>
                 </div>
             </div>
-            <script src="../server.js"></script>
+            <!-- <script src="../server.js"></script> -->
             <script>
-                $('#modal').on('shown.bs.modal', function () { $('#modal').focus(); });
+                // $('#modal').on('shown.bs.modal', function () { $('#modal').focus(); });
 
                 $("#survey-submit").on("click", function (event) {
                     event.preventDefault();
@@ -203,11 +203,10 @@
                     for (var i = 0; i < 10; i++) {
                         newFriend.push($("#q" + (i + 1)).val());
                     }
-                    console.log(newFriend);
+                    
 
                     $.post("/api/friends", newFriend)
                         .then(function (data) {
-                            console.log(data);
                         })
 
                 });
@@ -215,11 +214,8 @@
             </script> 
 
 
-
-
-
-
-
 </body>
 
 </html>
+
+

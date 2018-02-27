@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Static directory
-app.use(express.static("app/public"));
+app.use(express.static("./app/public"));
 
 // Routes
 // =============================================================
@@ -29,7 +29,7 @@ require("./app/routing/html-routes.js")(app);
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+  console.log("App listening on PORT" + PORT);
 });
 
 
