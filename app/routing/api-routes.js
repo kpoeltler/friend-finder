@@ -21,7 +21,7 @@ function totalDiff(array1, array2) {
       
       for(var i = 0; i < data.length; i++) {
         var difference = totalDiff(data[i].scores, getData);
-        if (difference < currentLowest) {
+        if (difference < userLowest) {
           userLowest = difference;
           userMatch = i;
         }
