@@ -3,6 +3,7 @@ $("#submit-btn").on("click", function ()
   event.preventDefault();
 
     var getScores = [];
+    
     for (var i = 0; i < 10; i++) {
     getScores.push($("#question-" + (i + 1)).val() * 1);
 }
