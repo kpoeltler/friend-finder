@@ -9,27 +9,27 @@ $("#submit-btn").on("click", function ()
 
 
   var requestData = 
-  {
+{
     scores: JSON.stringify(getScores)
-  };
+};
 
 
   $.post("/api/friends", requestData)
     .then((data) => {
       var link = $("<a>");
-      var photo = $("<img>");
+      var image = $("<img>");
       link.attr("href", data.link);
       link.attr("target", "_blank");
       link.text("Follow me on Instagram!")
-      photo.attr("src", data.photo);
-      photo.attr("alt", "picture of " + data.name);
-      photo.attr("style", "width: 100%");
+      image.attr("src", data.photo);
+      image.attr("alt", "picture of " + data.name);
+      image.attr("style", "width: 100%");
 
 
       $("#result-name").empty();
       $("#result-display").empty();
       $("#result-name").text(data.name);
       $("#result-display").append(link);
-      $("#result-display").append(photo);
+      $("#result-display").append(image);
     });
 });

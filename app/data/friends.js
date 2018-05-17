@@ -9,25 +9,25 @@ module.exports = [{
   name: "Moshi",
   link:"https://www.instagram.com/moshi.moshi.yumi/?hl=en",
   photo: "images/moshi.jpg",
-  scores: [5, 3, 2, 4, 3, 3, 2, 5, 3, 4]
+  scores: [1, 1, 2, 1, 3, 1, 2, 5, 3, 1]
 },
 {
   name: "Goldie",
   link:"https://www.instagram.com/puppydairy/?hl=en",
   photo: "images/goldie.jpg",
-  scores: [5, 3, 4, 5, 2, 4, 5, 3, 2, 3]
+  scores: [5, 3, 2, 5, 2, 2, 5, 3, 2, 2]
 },
 {
   name: "Pippa",
   link:"https://www.instagram.com/pippathepup18/?hl=en",
   photo: "images/pippa.jpg",
-  scores: [1, 5, 2, 4, 3, 5, 3, 5, 1, 5]
+  scores: [1, 3, 2, 4, 3, 5, 3, 5, 1, 5]
 },
 {
   name: "Boxer",
   link:"https://www.instagram.com/boxerparadise/?hl=en",
   photo: "images/boxer.jpg",
-  scores: [3, 4, 2, 3, 1, 4, 3, 4, 1, 2]
+  scores: [5, 4, 5, 3, 5, 5, 3, 5, 5, 5]
 },
 {
   name: "Yorkie",
