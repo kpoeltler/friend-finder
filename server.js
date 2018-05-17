@@ -1,20 +1,20 @@
 // Dependencies
 // =============================================================
 let express = require("express");
-let app = express();
 let bodyParser = require("body-parser");
 let path = require("path");
 
+let app = express();
 // Sets up the Express App
 // =============================================================
 
-let PORT = process.env.PORT || 8080;
+let PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.use(express.static("app/public"));
+app.use(express.static(path.join(_dirname, 'app/public')));
 
 // Routes WHY THIS METHOD
 // =============================================================
