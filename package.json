@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/kpoeltler/friend-finder/issues"
   },
-  "homepage": "https://github.com/kpoeltler/friend-finder/#readme",
+  "homepage": "https://github.com/kpoeltler/friend-finder/",
   "dependencies": {
     "body": "^5.1.0",
     "body-parser": "^1.15.0",
