@@ -13,7 +13,7 @@ function totalDiff(array1, array2) {
       res.json(data);
     });
   
-    // Search for Specific Character (or all characters) - provides JSON
+   
     app.post("/api/friends", function (req, res) {
       var getData = JSON.parse(req.body.scores);
       var userMatch = 0;
