@@ -4,7 +4,7 @@ module.exports = [
   name: "Moshi",
   link:"https://www.instagram.com/moshi.moshi.yumi/?hl=en",
   photo: "images/moshi.jpg",
-  scores: [1, 1, 2, 1, 3, 1, 2, 5, 3, 1]
+  scores: [1, 1, 1, 1, 1, 1, 2, 1, 1, 1]
 },
 {
   name: "Goldie",
