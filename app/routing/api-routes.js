@@ -1,53 +1,50 @@
 
-
-
-    
-      
-      var friendsData = require('../data/friends.js');
-      var bodyParser = require('body-parser');
-      var path = require('path');
-      
+      getDiff=(array1, array2) =>{
+          let totalDifference = 0;
+          for (let j =0; j< array1.length; j++){
+              totalDifference += Math.abs(array1[j] - array2[j]);
+          }
+          return totalDifference;
+      }
       
       module.exports = function(app) {
+      let data = require("../data/friends.js");
       
-          
-          app.use(bodyParser.json());
-          app.use(bodyParser.urlencoded({ extended: true }));
-          app.use(bodyParser.text());
-          app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-      
-          
-          app.get("/data/friends", function(req, res) {
-              res.json();
+      app.get("/api/friends", function (req, res) {
+              res.json(data);
           });
-      
-       
-          app.post("/data/friends", function(req, res) {
+
+      app.post("/api/friends", function (req, res) {
               
-              var userFriend = req.body;
-              var totalScore;
-              var compDiff = 0;
-              var compFriend;
+              let userFriend = JSON.parse(req.body.scores);
+              let userMatch = 0; 
+              let userLowest = 20; 
               
               
-          
-              for (var i = 0; i < friendsData.length; i++) {
-                  
-                  totalScore = 0;
-                  
-                  for (var j = 0; j < 10; j++) {
-                      var minuend = userFriend[j];
-                      var subtrahend = friendsData[i].scores[j];
-                      parseInt(minuend);
-                      parseInt(subtrahend);
+              for (var i = 0; i < data.length; i++) {
+                      let minuend = getDiff(data[i].scores, userFriend);
+                      if (minuend < userLowest) {
+                          userLowest = minuend;
+                          userMatch = i;
+                      }
+                      }
                       
-                      var addToScore = Math.abs(minuend - subtrahend);
+                      res.json(data[userMatch]);
+                    });
+                }
+
+
+    //                   var subtrahend = friendsData[i].scores[j];
+    //                   parseInt(minuend);
+    //                   parseInt(subtrahend);
+                      
+    //                   var addToScore = Math.abs(minuend - subtrahend);
                      
-                      totalScore = totalScore + addToScore;
-                  }
+    //                   totalScore = totalScore + addToScore;
+    //               }
                  
-                  var newTotalScore = totalScore;
-                }   
-          });
-      };
+    //               var newTotalScore = totalScore;
+    //             }   
+    //       });
+    //   };
       

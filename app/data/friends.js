@@ -1,5 +1,5 @@
-let friends = [
-    {
+module.exports = [{
+    
       name: "black lab",
       photo: "http://www.akc.org/dog-breeds/flat-coated-retriever/",
       scores: [3, 2, 2, 2, 3, 5, 2, 3, 3, 3]
@@ -36,5 +36,5 @@ let friends = [
     },
   ];
   
-  module.export = friends;
+  
   
