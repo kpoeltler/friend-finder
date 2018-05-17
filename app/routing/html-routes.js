@@ -1,26 +1,9 @@
-
-let express = require("express");
-let app = express();
-let bodyParser = require("body-parser");
-let path = require("path");
-
 module.exports = function(app) {
-  
-  app.use(bodyParser.json());
-  app.use(bodyParser.urlencoded({ extended: true }));
-  app.use(bodyParser.text());
-  app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-
-  
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
+  app.get("/", function (req, res) {
+    res.sendFile("home.html", {root: "./app/public"});
   });
 
-  app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/survey.html"));
+  app.get("/survey", function (req, res) {
+    res.sendFile("survey.html", {root: "./app/public"});
   });
-
-  app.use(function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-  });
-};
+}
