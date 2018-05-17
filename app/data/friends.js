@@ -1,10 +1,5 @@
-module.exports = [{
-    
-  name: "Sunny",
-  link: "https://www.instagram.com/explore/tags/sunnydog/?hl=en",
-  photo: "images/sunny.jpg",
-  scores: [3, 2, 2, 2, 3, 5, 2, 3, 3, 3]
-},
+module.exports = [
+  
 {
   name: "Moshi",
   link:"https://www.instagram.com/moshi.moshi.yumi/?hl=en",
@@ -39,7 +34,13 @@ module.exports = [{
   name: "Graham",
   link:"https://www.instagram.com/graham_the_oes/?hl=en",
   photo: "images/graham.jpg",
-  scores: [1, 2, 3, 5, 1, 5, 5, 4, 1, 3]
+  scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 },
+{
+  name: "Sunny",
+  link: "https://www.instagram.com/explore/tags/sunnydog/?hl=en",
+  photo: "images/sunny.jpg",
+  scores: [3, 2, 2, 2, 3, 5, 2, 3, 3, 3]
+}
 ];
 
