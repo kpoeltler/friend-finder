@@ -1,23 +1,23 @@
 $("#submit-btn").on("click", function() {
     event.preventDefault();
     
-    let getScores = [];
+    var getScores = [];
   
 
-    for (let i = 0; i < 10; i++) {
+    for (var i = 0; i < 10; i++) {
       getScores.push($("#question-" + (i+1)).val() * 1);
     }
   
 
-    let requestData = {
+    var requestData = {
       scores: JSON.stringify(getScores)
     };
   
 
     $.post("/api/friends", requestData)
       .then((data) => {
-        let link = $("<a>");
-        let image = $("<img>");
+        var link = $("<a>");
+        var image = $("<img>");
         link.attr("href", data.link);
         link.attr("target", "_blank");
         link.text("Follow me on Instagram!")
