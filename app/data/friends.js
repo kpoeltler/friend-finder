@@ -52,7 +52,7 @@ name: "Marnie, knows all the Hollywood elite, just check out all his selfies.",
   name: "Missasiaxoxo, rocks as hard as her owner Lady Gaga!",
  link:"https://www.instagram.com/p/BPLUNKxD5yu/?taken-by=missasiaxoxo",
  photo: "images/gaga.jpg",
- scores: [4, 4, 4, 1, 4, 1, 4, 4, 1, 4]
+ scores: [4, 4, 4, 1, 4, 1, 4, 4, 1, 4],
 }
 
 ];
