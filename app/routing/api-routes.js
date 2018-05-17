@@ -17,7 +17,7 @@ function totalDiff(array1, array2) {
     app.post("/api/friends", function (req, res) {
       var getData = JSON.parse(req.body.scores);
       var userMatch = 0;
-      var userLowest = 11;
+      var userLowest = 20;
       
       for(var i = 0; i < data.length; i++) {
         var difference = totalDiff(data[i].scores, getData);
