@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(_dirname, 'app/public')));
+app.use(express.static(path.join(__dirname, 'app/public')));
 
 // Routes WHY THIS METHOD
 // =============================================================

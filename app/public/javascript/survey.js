@@ -1,20 +1,20 @@
 $("#submit-btn").on("click", function() {
     event.preventDefault();
     
-    let scores = [];
+    let getScores = [];
   
 
     for (let i = 0; i < 10; i++) {
-      scores.push($("#question-" + (i+1)).val() * 1);
+      getScores.push($("#question-" + (i+1)).val() * 1);
     }
   
 
-    let getData = {
-      scoresFinal: JSON.stringify(scoresFinal)
+    let requestData = {
+      scores: JSON.stringify(getScores)
     };
   
 
-    $.post("/api/friends", getData)
+    $.post("/api/friends", requestData)
       .then((data) => {
         let link = $("<a>");
         let image = $("<img>");
