@@ -7,7 +7,7 @@ function totalDiff(array1, array2) {
   }
   
   module.exports = function(app) {
-    var data = require("../data/friends.js");
+    var data = require("app/data/friends.js");
   
     app.get("/api/friends", function (req, res) {
       res.json(data);

@@ -26,7 +26,7 @@ module.exports = [{
 {
   name: "boxer",
   link:"https://www.instagram.com/boxerparadise/?hl=en",
-  photo: "images/boxerjpg",
+  photo: "images/boxer.jpg",
   scores: [3, 4, 2, 3, 1, 4, 3, 4, 1, 2]
 },
 {
