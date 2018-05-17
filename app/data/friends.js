@@ -6,7 +6,7 @@ module.exports = [{
   scores: [3, 2, 2, 2, 3, 5, 2, 3, 3, 3]
 },
 {
-  name: "moshi",
+  name: "Moshi",
   link:"https://www.instagram.com/moshi.moshi.yumi/?hl=en",
   photo: "images/moshi.jpg",
   scores: [5, 3, 2, 4, 3, 3, 2, 5, 3, 4]
@@ -24,19 +24,19 @@ module.exports = [{
   scores: [1, 5, 2, 4, 3, 5, 3, 5, 1, 5]
 },
 {
-  name: "boxer",
+  name: "Boxer",
   link:"https://www.instagram.com/boxerparadise/?hl=en",
   photo: "images/boxer.jpg",
   scores: [3, 4, 2, 3, 1, 4, 3, 4, 1, 2]
 },
 {
-  name: "yorkie",
+  name: "Yorkie",
   link:"https://www.instagram.com/hermi_da_yorkie/?hl=en",
   photo: "images/yorkie.jpg",
   scores: [5, 3, 2, 4, 2, 3, 2, 4, 1, 5]
 },
 {
-  name: "graham",
+  name: "Graham",
   link:"https://www.instagram.com/graham_the_oes/?hl=en",
   photo: "images/graham.jpg",
   scores: [1, 2, 3, 5, 1, 5, 5, 4, 1, 3]
